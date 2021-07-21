@@ -1,2 +1,5 @@
 # Algorithm-practices
-Data structure and algorithm practices at 2020 S2 (B+)
+Data structure and algorithm practices
+
+Leetcode folder:
+rt
