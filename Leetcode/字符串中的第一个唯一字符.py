@@ -11,12 +11,19 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        # first way: 
+        # for i in range(len(s)):
+        #     if s.find(s[i]) == s.rfind(s[i]):
+        #         return i
+        # return -1
+
+        # second way:
         for i in range(len(s)):
-            if s.find(s[i]) == s.rfind(s[i]):
-                return i
-        return -1
+            if s.count(s[i]) == 1:
+                return s.index(s[i])
 
 
 test = Solution()
-s = 'loveleetcode'
+s = 'leetcode'
 print(test.firstUniqChar(s))
+# test.firstUniqChar(s)
