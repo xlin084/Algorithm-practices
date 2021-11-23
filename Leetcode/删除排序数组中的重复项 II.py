@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         for i in range(len(nums) - 1, 2, -1):
-            if (nums[i] == nums [i-1] and nums[i-1] == nums[i-2]):
+            if (nums[i] == nums[i-2]):
                 del nums[i]
 
         return nums
